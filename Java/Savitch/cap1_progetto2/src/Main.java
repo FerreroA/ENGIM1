@@ -9,10 +9,9 @@ public class Main {
         System.out.println("Inserisci il tuo anno di nascita:");
         int birthDate = tastiera.nextInt();
         System.out.println("Inserisci l'età di riferimento:");
-        int years = tastiera.nextInt();;
+        int years = tastiera.nextInt();
 
         int ret = birthDate + years;
-
 
         if (ret >= 2021)
             System.out.println("Compirai " + years + " anni nel " + ret);
