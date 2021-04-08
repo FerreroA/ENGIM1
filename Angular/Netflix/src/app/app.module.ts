@@ -8,6 +8,8 @@ import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { LoginComponent } from './components/login/login.component';
 import { FilmListComponent } from './components/film-list/film-list.component';
+import {FormsModule} from '@angular/forms';
+import {HttpClientModule} from '@angular/common/http';
 
 
 @NgModule({
@@ -16,13 +18,14 @@ import { FilmListComponent } from './components/film-list/film-list.component';
     HeaderComponent,
     FooterComponent,
     LoginComponent,
-    FilmListComponent,
-
+    FilmListComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
