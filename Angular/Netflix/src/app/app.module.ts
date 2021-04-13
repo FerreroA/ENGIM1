@@ -10,6 +10,9 @@ import { LoginComponent } from './components/login/login.component';
 import { FilmListComponent } from './components/film-list/film-list.component';
 import {FormsModule} from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http';
+import { tap } from "rxjs/operators";
+import { DashboardComponent } from './components/dashboard/dashboard.component';
+import {NgxLocalStorageModule} from 'ngx-localstorage';
 
 
 @NgModule({
@@ -18,14 +21,17 @@ import {HttpClientModule} from '@angular/common/http';
     HeaderComponent,
     FooterComponent,
     LoginComponent,
-    FilmListComponent
+    FilmListComponent,
+    DashboardComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FontAwesomeModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    NgxLocalStorageModule.forRoot(),
+
   ],
   providers: [],
   bootstrap: [AppComponent]
